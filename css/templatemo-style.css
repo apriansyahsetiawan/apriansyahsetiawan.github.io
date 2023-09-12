@@ -53,6 +53,7 @@ h5 {
 #work,
 #about,
 #portfolio,
+#education,
 #contact {
   padding-top: 100px;
   padding-bottom: 120px;
@@ -269,9 +270,42 @@ h5 {
 }
 /* end about */
 
+/* start education */
+#education {
+  background: #1a1a1a;
+  text-align: center;
+}
+#education h2 {
+  padding-bottom: 30px;
+}
+#education .education-thumb {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+}
+#education .education-thumb .education-overlay {
+  background: #d43f52;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding-top: 60px;
+  transition: all 0.4s ease-in-out;
+}
+#education .education-thumb:hover .education-overlay {
+  cursor: pointer;
+  opacity: 0.8;
+  transform: scale(0.9);
+}
+/* end education */
+
 /* start portfolio */
 #portfolio {
-  background: #1a1a1a;
+  /* background: #1a1a1a; */
   text-align: center;
 }
 #portfolio h2 {
@@ -304,8 +338,9 @@ h5 {
 
 /* start contact */
 
-#contact address {
+#contact {
   padding-bottom: 18px;
+  background: #1a1a1a;
 }
 
 #contact .contact-title {
